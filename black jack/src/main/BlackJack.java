@@ -88,6 +88,10 @@ public class BlackJack
 		out.println("\nDealer has won "+players.get(0).getWinCount() + " times.");
 		out.println("Player "+i +" has won "+players.get(i).getWinCount() + " times.");
 		}
+		out.println("\nDealer has won "+players.get(0).getWinCount() + " times.");
+		for(int i =1;i<players.size();i++) {
+			out.println("Player "+i +" has won "+players.get(i).getWinCount() + " times.");
+		}
 		out.print("\nDo you want to play again? [Y,y,N,n] :: ");
 		if(keyboard.next().toLowerCase().equals("y")) {
 			playGame();
